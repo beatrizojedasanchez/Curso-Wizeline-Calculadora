@@ -1,7 +1,7 @@
 import math
 
 
-def calculator():
+def calculadora():
     while True:
         print("Selecciona la operación")
         print("1. Suma")
@@ -34,10 +34,19 @@ def calculator():
         elif choice == '5':
             num1 = float(input("Ingresa el númera para sacar su raiz: "))
             raiz=math.sqrt(num1)
-            print("La raiz cuadrada de " + num1 + "es "+ raiz)
-            
+            print("La raiz cuadrada de ",  num1,  " es ",  raiz)
+        elif choice == '6':
+            base = float(input("Ingresa la base: "))
+            exponente = float(input("Ingresa el exponente: "))
+            resultado=math.pow(base, exponente)
+            print("El resultado de ",  base,  "elevado al ",  exponente, "es ", resultado )
+        elif choice == '7':
+            num1 = float(input("Ingresa el número: "))
+            resultado=math.sin(math.radians(num1))
+            print("El seno de " , num1, "es ", resultado )
+                 
         else:
             print("Opción inválida")
 
-calculator()
+calculadora()
 
