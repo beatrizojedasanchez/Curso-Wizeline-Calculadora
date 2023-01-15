@@ -2,7 +2,7 @@
 import math
 import numpy as np
 
-#
+#Se declaran funciones y variables
 def suma():
     num1 = float(input("Ingresa el primer número: "))
     num2 = float(input("Ingresa el segundo número: "))
@@ -39,9 +39,9 @@ def seno():
     resultado=np.sin(np.deg2rad(num1))
     print("El seno de " , num1, "es ", resultado )
 
-#
+
 def calculadora():
-    #
+    #Se genera menú
     while True:
         print("Selecciona la operación")
         print("1. Suma")
@@ -54,7 +54,7 @@ def calculadora():
 
 
 
-
+#Evaluación de operacion
         operacion = input("Ingresa tu elección (1/2/3/4/5/6/7): ")
 
         if operacion == '1':
